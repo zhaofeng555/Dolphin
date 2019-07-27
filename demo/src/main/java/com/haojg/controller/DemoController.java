@@ -4,6 +4,7 @@ import com.haojg.entity.Demo;
 import com.haojg.service.DemoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -31,4 +32,25 @@ public class DemoController {
         return demoService.save(Demo);
     }
 
+    @RequestMapping("/")
+    public String index(){
+        System.out.println("index");
+        return "index";
+    }
+    @RequestMapping("/mirror")
+    public String mirror(){
+        System.out.println("mirror");
+        return "mirror";
+    }
+    @RequestMapping("/mirror/h")
+    public String mirrorH(){
+        System.out.println("mirror-h");
+        return "mirror/h";
+    }
+
+    @RequestMapping("/mirror/j")
+    public String mirrorJ(){
+        System.out.println("mirror-j");
+        return "mirror/J";
+    }
 }

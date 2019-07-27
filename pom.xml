@@ -4,6 +4,9 @@
     <modelVersion>4.0.0</modelVersion>
     <modules>
         <module>demo</module>
+        <module>dolphin-spi</module>
+        <module>dolphin-id-generator</module>
+        <module>dolphin-common</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
